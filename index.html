@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Secret Obsession Every Man Craves | Free Video</title>
+<meta name="description" content="There's one emotional trigger that changes how a man connects, pursues, and commits. Discover it in this short free video.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Learn the Secret Obsession Every Man Craves More Than Love, Money & Sex">
+<meta property="og:description" content="There's one emotional trigger that can completely change how a man connects, pursues, and commits. Discover it in this short free video.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://via.placeholder.com/1200x630">
+
+<!-- Favicon placeholder -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
+
+<style>
+  :root {
+    --accent: #2563EB;
+    --accent-dark: #1D4ED8;
+    --text-dark: #0F172A;
+    --text-muted: #52607A;
+    --bg-white: #FFFFFF;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --shadow-soft: 0 20px 50px rgba(37, 99, 235, 0.08);
+    --shadow-btn: 0 15px 35px rgba(37, 99, 235, 0.35);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-dark);
+    background: linear-gradient(180deg, #FBFCFF 0%, #F5F8FF 45%, #FFFFFF 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Floating background shapes */
+  .bg-shape {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.35;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .shape-1 {
+    width: 420px;
+    height: 420px;
+    top: -120px;
+    left: -140px;
+    background: radial-gradient(circle, #DBEAFE 0%, transparent 70%);
+    animation: float1 14s ease-in-out infinite;
+  }
+
+  .shape-2 {
+    width: 380px;
+    height: 380px;
+    bottom: -150px;
+    right: -120px;
+    background: radial-gradient(circle, #BFDBFE 0%, transparent 70%);
+    animation: float2 16s ease-in-out infinite;
+  }
+
+  .shape-3 {
+    width: 260px;
+    height: 260px;
+    top: 40%;
+    right: 8%;
+    background: radial-gradient(circle, #E0E7FF 0%, transparent 70%);
+    animation: float3 12s ease-in-out infinite;
+  }
+
+  @keyframes float1 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(30px, 40px); }
+  }
+  @keyframes float2 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-25px, -35px); }
+  }
+  @keyframes float3 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-20px, 25px) scale(1.08); }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    width: 100%;
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 999px;
+    margin-bottom: 28px;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+    animation-delay: 0.05s;
+  }
+
+  .badge::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    max-width: 780px;
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+    animation-delay: 0.15s;
+  }
+
+  h1 .highlight {
+    background: linear-gradient(90deg, var(--accent), #60A5FA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .subheadline {
+    margin-top: 24px;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 620px;
+    font-weight: 400;
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+    animation-delay: 0.25s;
+  }
+
+  .benefits {
+    list-style: none;
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+    animation-delay: 0.35s;
+  }
+
+  .benefits li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .benefits .check {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .cta-wrap {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+    animation-delay: 0.45s;
+  }
+
+  .cta-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 20px 44px;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    box-shadow: var(--shadow-btn);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    letter-spacing: 0.01em;
+    font-family: inherit;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.45);
+  }
+
+  .cta-button:active {
+    transform: translateY(-1px);
+  }
+
+  .cta-button .play-icon {
+    font-size: 1rem;
+  }
+
+  .cta-button.pulse {
+    animation: btnPulse 2.6s ease-in-out;
+  }
+
+  @keyframes btnPulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.45), var(--shadow-btn); }
+    70% { box-shadow: 0 0 0 18px rgba(37, 99, 235, 0), var(--shadow-btn); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0), var(--shadow-btn); }
+  }
+
+  .trust-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  footer {
+    margin-top: 56px;
+    font-size: 0.85rem;
+    color: #94A3B8;
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+    animation-delay: 0.55s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 48px 24px;
+    }
+    .benefits {
+      align-items: flex-start;
+      width: 100%;
+    }
+    .cta-button {
+      width: 100%;
+      justify-content: center;
+      padding: 18px 24px;
+    }
+  }
+
+  .cta-button:focus-visible {
+    outline: 3px solid #93C5FD;
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
+
+  <main class="container">
+    <span class="badge">Free 10-Minute Video</span>
+
+    <h1>Learn the <span class="highlight">Secret Obsession</span> Every Man Craves More Than Love, Money & Sex</h1>
+
+    <p class="subheadline">
+      There's one emotional trigger that can completely change how a man connects, pursues, and commits. Discover it in this short free video.
+    </p>
+
+    <ul class="benefits">
+      <li><span class="check">✓</span> Understand what truly drives emotional attraction</li>
+      <li><span class="check">✓</span> Discover why some women naturally inspire deeper commitment</li>
+      <li><span class="check">✓</span> Learn the emotional psychology behind lasting connection</li>
+      <li><span class="check">✓</span> Watch in less than 10 minutes</li>
+    </ul>
+
+    <div class="cta-wrap">
+      <button id="ctaButton" class="cta-button" type="button">
+        <span class="play-icon">▶</span> Watch the Free Video
+      </button>
+      <span class="trust-text">100% Free • No Signup Required</span>
+    </div>
+
+    <footer>
+      &copy; 2026. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var VIDEO_URL = "https://YOUR_VIDEO_LINK_HERE";
+      var btn = document.getElementById('ctaButton');
+
+      btn.addEventListener('click', function () {
+        window.location.href = VIDEO_URL;
+      });
+
+      // Pulse animation every few seconds
+      function pulse() {
+        btn.classList.remove('pulse');
+        // force reflow to restart animation
+        void btn.offsetWidth;
+        btn.classList.add('pulse');
+      }
+
+      var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReducedMotion) {
+        setTimeout(pulse, 1500);
+        setInterval(pulse, 5000);
+      }
+    })();
+  </script>
+
+</body>
+</html>
